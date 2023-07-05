@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -aln ; cd .. ; ls -aln ; cd /boot ; ls -aln
+printf '%s\n' "$(ls -aln "$PWD)")" "$(ls -aln "$PWD/.." )" "$(ls -aln "/boot")"ls -aln ; cd .. ; ls -aln ; cd /boot ; ls -aln
